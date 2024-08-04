@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #fff;
+}
+.bg-dark{
+    background: #333;
+    color: #fff;
+    
+}
+
+.bg-middum{
+    background: #e6dcdc;
+    color: cadetblue;
+
+}
+.about .bg-ligh{
+    background: #fff;
+    color: #000;
+}
+
+
+.about h1{
+    padding: 20px;
+}
+.about-info img{
+    width: 50%;
+} 
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background: rgba(20, 19, 19, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10;
+   
+}
+.logo{
+    width: 200px;
+    height: auto;
+    border-radius: 0  20px 20px 0;
+}
+
+.navbar a{
+font-size: 18px;
+color: #fff;
+text-decoration: none;
+font-weight: 500px;
+margin-right:5rem;
+transition: 2s;
+
+}
+
+.navbar a:hover,
+a.current{
+  color: #0ef;  
+}
+
+.home{
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-image img{
+    max-width: 450px;
+}
+
+.home-cntent{
+    max-width: 600px;
+   
+}
+
+
+.home-cntent h1{
+    font-size: 55px;
+    font-weight: 700px;
+    animation: animat 2s ease forwards;
+}
+.ror{
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ror span{
+    color: #222;
+    display: inline;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    font-size: 22px;
+    transform: rotate(360deg);
+    animation: rot 4s linear infinite;
+color: blueviolet;
+}
+
+
+@keyframes rot{
+    0%{transform: rotateY(360deg) scale(0);}
+    50%{transform: rotateX('0deg')scale(1);}
+    75%{transform: rotate('0deg') scale(0);}
+    100%{font-size: 10rem;}
+}
+
+.home-cntent h3{
+    font-size: 32px;
+    font-weight: 700px;
+    animation: anim 2s ease forwards;
+    animation-delay: 0.7s;
+}
+
+
+.home-cntent h3 span{
+    color: rgb(255, 0, 0);
+    animation-name: example;
+    animation: am 2s ease forwards;
+    animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+ 
+}
+@keyframes am {
+    0%  {background-color: yellow;}
+  
+    100% {background-color: green;}
+
+  
+  }
+
+  /* about */
+  .about{
+margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    
+  }
+
+  .about img{
+    width: 100%;
+  
+  }
+  .about .about-info{
+ height: 100vh;
+ text-align: center;
+ font-size: 30px;
+ 
+ margin-top: 90px;
+  
+  }
+.about-info i{
+    display:inline-block;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-info h3{
+    font-size: 3rem;
+    padding-bottom: 30px;
+    color: blue;
+    padding-top: 20px;
+}
+
+
+.about-info h1{
+    color: #09ed2b;
+    transform: rotate(360deg);
+    animation: h1 4s linear infinite;
+  
+   
+}
+
+.about-info h2{
+    color: red;
+    padding: 20px;
+}
+
+@keyframes h1{
+    0%{transform: rotateY(360deg) scale(0);}
+    50%{transform: rotateX('0deg')scale(1);}
+    100%{transform: rotate('0deg') scale(1);}
+}
+
+ 
+/* Contact  */
+
+
+
+.footer {
+   margin-top:200px;
+   height: 100px;
+
+}
+.social{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    color: #fff;
+}
+.social a{
+    color: #fff;
+    padding: 10px;
+    }
+
+    .footer p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    .social a:hover{
+        background: hsla(47, 88%, 53%, 0.855);
+       
+    }
+/* Contact */
+.form-g{
+   
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+
+}
+.form{
+
+margin-top: 80px;
+height: 100vh;
+width: 50%;
+display: flex;
+flex-direction: column;
+margin-left: 100px;
+    }
+.addres{
+   
+    margin-top: 100px;
+    padding:20px;
+    background: #333;
+    color: #fff;
+    height: 300px;
+    font-size: 18px;
+    
+}
+
+
+label{
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+}
+
+input{
+    width: 60%;
+    padding: 2px;
+    height: 2rem;
+}
+
+
+textarea{
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+.form .btn{
+    background: rgb(211, 37, 37);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    color: #fff;
+    height: 8%;
+    font-size: 30px;
+    width: 30%;
+    cursor: pointer;
+    position: relative;
+    animation: mymove 10s linear infinite;
+
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+    
+}
+.form .btn:hover{
+ opacity: 0.7;
+}
+
+.form-g .group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
+@keyframes anim{
+    0%{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+100%{
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+@keyframes animat{
+    0%{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+100%{
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+
+/* other device */
+
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+       height: 120px;
+      
+    }
+    .logo{
+        padding: 10px;
+        
+    }
+    .home{
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        height: 80%;
+
+    }
+    .home img{
+        border-radius: 50%;
+        height: 400px;
+
+    }
+    .home p{
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+    .about-info  img{
+        width: 100%;
+    }
+
+    .about-info h2{
+   
+    overflow-wrap:anywhere;
+    font-size: 60px;
+    }
+   .form-g{
+    flex-direction: column-reverse;
+  
+   }
+   .form{
+    width: 100%;
+    margin: 0px;
+    margin-left: 100pxs;
+  
+   }
+   textarea{
+    width: 70%;
+   }
+
+   .addres{
+    margin: 0;
+    padding: 0;
+    margin-top: 130px;
+    overflow: visible;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+/* 
+footer{
+  
+    border-radius: 20px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.social a{
+color: #fff;
+padding: 10px;
+}
+.footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.social a:hover{
+    background: hsla(47, 88%, 53%, 0.855);
+   
+} */
